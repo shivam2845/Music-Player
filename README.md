@@ -1,2 +1,2 @@
 # Music-Player
-Simple Calculator using HTML, CSS, JS
+ Music Player using HTML, CSS, JS
