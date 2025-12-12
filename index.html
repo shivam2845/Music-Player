@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Music Player</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <div class="player-container">
+      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c8e9f3f0f6f9fa3b3f5c8ef5e6c6b2d"
+           class="album-img" id="albumArt" alt="Album Art">
+
+      <h2 id="title">Track 1 - Sample Audio</h2>
+      <p id="artist">Bensound | Royalty Free Music</p>
+
+      <audio id="audio">
+          <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+          <input type="range" id="progress" min="0" max="100" value="0">
+          <div class="time">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+          </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+          <div class="btn" id="prev" title="Previous"><i class="fas fa-backward"></i></div>
+          <div class="btn play-btn" id="play" title="Play/Pause"><i class="fas fa-play"></i></div>
+          <div class="btn" id="next" title="Next"><i class="fas fa-forward"></i></div>
+      </div>
+
+      <!-- Volume -->
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" title="Volume">
+
+      <!-- Small credits -->
+      <p class="credits">Made with ❤️ </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
